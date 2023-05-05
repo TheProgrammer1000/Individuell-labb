@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Dennis Inlämning</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="bookConfig.html">Registera Böcker</a></li>
+        <li><a href="bookUpdate.html">Redigera Böcker</a></li>
+        <li>Chatta</li>
+      </ul>
+    </nav>
+    <main>
+      <div id="form-wrapper">
+        <form
+          action="http://localhost:3000/books/create"
+          method="POST"
+          id="form-create"
+        >
+          <label for="author">Author</label>
+          <input
+            type="text"
+            placeholder="author..."
+            id="author"
+            name="author"
+          />
+
+          <label for="title">Title</label>
+          <input type="text" placeholder="title..." id="title" name="title" />
+
+          <label for="genre">Genre</label>
+          <input type="text" placeholder="genre..." id="genre" name="genre" />
+
+          <label for="year">Year</label>
+          <input type="number" placeholder="year..." id="year" name="year" />
+
+          <input
+            type="button"
+            onclick="createValidation()"
+            value="Create Book"
+          />
+        </form>
+      </div>
+    </main>
+    <script src="../bookConfig.js"></script>
+  </body>
+</html>

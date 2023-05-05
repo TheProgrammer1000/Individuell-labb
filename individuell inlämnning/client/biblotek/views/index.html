@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Dennis Inlämning</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li>Hem</li>
+        <li><a href="bookConfig.html">Registera Böcker</a></li>
+        <li><a href="bookUpdate.html">Redigera Böcker</a></li>
+        <li><a href="http://localhost:3001/">Chatta med Biblotekarie</a></li>
+      </ul>
+    </nav>
+    <main id="content">
+      <div id="search-wrapper">
+        <!-- <h2 id="book-header">Böcker</h2> -->
+        <p>sök</p>
+        <input
+          type="text"
+          height="100px"
+          id="book-titel-input"
+          placeholder="filter search..."
+        />
+        <input
+          type="button"
+          value="Author-Filter"
+          onclick="changeFilterSearch('default-author')"
+        />
+        <input
+          type="button"
+          value="Title-Filter"
+          onclick="changeFilterSearch('default-title')"
+        />
+      </div>
+      <ul id="bookList"></ul>
+    </main>
+    <script src="../index.js"></script>
+  </body>
+</html>

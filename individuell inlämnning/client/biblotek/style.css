@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+#navbar {
+  height: 10vh;
+}
+
+#navbar ul {
+  color: white;
+  font-weight: 600;
+  display: flex;
+  background-color: rgb(65, 6, 110);
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#book-header {
+  margin-right: 20vw;
+}
+
+#search-wrapper {
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+#content {
+  font-size: 2rem;
+}
